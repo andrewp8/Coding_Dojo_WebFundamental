@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <h1>Registration Form</h1>
+  <form action="/process" method="post">
+    <div>
+      <label>First Name:* </label>
+      <input type="text">
+    </div>
+
+    <div>
+      <label>Last Name:* </label>
+      <input type="text">
+    </div>
+
+    <div>
+      <label>Email Address:* </label>
+      <input type="text">
+    </div>
+
+    <div>
+      <label>Password:* </label>
+      <input type="password">
+    </div>
+
+    <div>
+      <label>Confirm Password:* </label>
+      <input type="password">
+    </div>
+
+    <div>
+      <label>Birthday:* </label>
+      <input type="date">
+    </div>
+
+    <label>Gender Identity:</label>
+    <div>
+      <input type="radio" name="gender" id="male">
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female">
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="non_binary">
+      <label for="non_binary">Non-binary</label>
+
+      <input type="radio" name="gender" id="not_answer">
+      <label for="not_answer">I prefer not to answer</label>
+    </div>
+
+    <label for="comment">A short description about myself:</label>
+    <div>
+      <textarea name="comment" id="" cols="30" rows="2"></textarea>
+    </div>
+
+    <label for="language">Favorite Language: </label>
+    <select name="language">
+      <option>JavaScript</option>
+      <option>Python</option>
+      <option>C++</option>
+    </select>
+
+    <div>
+      <input type="checkbox" name="subscription" checked>
+      <label for="subscription">Yes, I would like to receive periodic email updates</label>
+    </div>
+
+    <input type="submit" value="Create Account">
+    <div>
+      <label>* Indicate a required field</label>
+    </div>
+  </form>
+
+</body>
+
+</html>
