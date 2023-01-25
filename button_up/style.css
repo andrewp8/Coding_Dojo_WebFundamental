@@ -1,0 +1,37 @@
+*{
+  margin: 20px;
+  padding: 0;
+}
+button{
+  display: block;
+  margin: 10px;
+}
+
+#teal_btn{
+  color: turquoise;
+  text-align: center;
+  border: .5px solid turquoise;
+  border-radius: 25px;
+  padding: 5px 30px;
+}
+
+#circle_btn{
+  font-size: larger;
+  width: 30px;
+  height: 30px;
+  background-color: turquoise;
+  color: white;
+  border: 1px solid turquoise;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#shadow_btn{
+  color: white;
+  font-weight: lighter;
+  background-color: dodgerblue;
+  border: 1.5px solid black;
+  border-radius: 0;
+  padding: 5px 30px;
+  box-shadow: 5px 5px 1px black;
+}
