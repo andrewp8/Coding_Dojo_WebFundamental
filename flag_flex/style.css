@@ -96,22 +96,26 @@
   background-color: #007C2E;
 }
 
+.child3>.col2{
+  position: relative;
+}
+
 .child3>.col2>.divider1{
   position: absolute;
-  top: 150px;
-  left: 1230px;
+  top: 95px;
+  left: 57px;
 }
 
 .child3>.col2>.divider2{
   position: absolute;
-  top: 150px;
-  left: 1280px;
+  top: 95px;
+  left: 103px;
 }
 
 .child3>.col2>.divider3{
   position: absolute;
-  top: 205px;
-  left: 1255px;
+  top: 145px;
+  left: 80px;
 }
 
 .child3>.col2>.divider1>.tri1{
