@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  flex: 1;
+}
