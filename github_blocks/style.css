@@ -35,7 +35,9 @@ p{
 
 
 img.octocat {
-    height: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 6px 10px black;
 }
 
 div{
@@ -54,20 +56,5 @@ div{
   margin-bottom: 20px;
 }
 
-/* .block1{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
-.block2{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-} */
-
-
-flex-flow: row-reverse wrap;
-justify-content: center;
-align-items: flex-end;
 

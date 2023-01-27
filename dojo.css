@@ -1,0 +1,122 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    
+/* Fixed width container class that will "auto-center" itself */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*  Shadow btn */
+.btn {
+  color: white;
+  font-weight: lighter;
+  background-color: dodgerblue;
+  border: 1.5px solid black;
+  border-radius: 0;
+  padding: 5px 30px;
+  box-shadow: 5px 5px 1px black;
+}
+
+/* From  Flex-ible Column Assignment*/
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.col{
+  flex: 1;
+  background-color: turquoise;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* From the Flex Navbar assignment */
+
+.nav{
+  display: flex;
+  align-items: center;
+  background-color: rgb(62, 61, 61);
+  margin: 0;
+  border: 3px groove white;
+}
+
+h1{
+  width: 50%;
+  justify-content: flex-start;
+  margin: 0;
+  padding-left: 16px;
+}
+
+ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  list-style: none;
+  padding: 0;
+}
+
+a{
+  font-size: small;
+  justify-content: space-between;
+  align-items: center;
+}
+a:link{
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+a.active{
+  font-weight: bolder;
+}
+
+button{
+  background: teal;
+  border: 2px solid black;
+  /* padding: 3px 10px; */
+  box-shadow: black 3px 3px 1px;
+  font-size: medium;
+}
+
+/* From GitHub Blocks Assignment */
+
+/* Background */
+.gradient-background {
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glass effect */
+div{
+  width: 720px;
+  height: 240px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
