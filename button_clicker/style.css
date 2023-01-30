@@ -1,5 +1,108 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Balsamiq Sans', cursive;
+	width: 600px;
+  margin: 0 auto;
+}
+
+button {
+	font-family: 'Balsamiq Sans', cursive;
+	font-weight: bolder;
+	
+	white-space: nowrap;
+	padding: 5px;
+	border: 2px solid black;
+	box-shadow: 2px 3px 1px black;
+}
+
+span {
+	font-style: italic;
+}
+/* 				header				 */
+.navBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #CCCCCC;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+}
+
+.navBar input {
+	font-family: 'Balsamiq Sans', cursive;
+	width: 50%;
+	border: 3px solid black;
+	padding: 5px;
+}
+
+.navBar button {
+	color: white;
+	background-color: #2B78E4;
+}
+/*				container				 */
+.container {
+	display: flex;
+  margin: 0 auto;
+	gap: 20px;
+}
+
+/* 				main				 */
+.main {
+	width: 80%;
+}
+
+/* 				vocationary_box */
+.vocabulary_box {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: space-between;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.vocabulary_box button {
+	background-color: #FFD966;
+	padding: 5px 15px;
+	margin: 10px 0;
+}
+.vocabulary_word {
+	text-align: center;
+}
+
+.vocabulary_word h4 {
+	font-style: italic;
+}
+.vocabulary_word h5 {
+	margin: 10px 0;
+}
+
+
+.vocabulary_definition a {
+	color: #085394;
+}
+
+.vocabulary_definition p {
+	padding: 25px;
+}
+
+/* 				side				 */
+.sm_side {
+	height: 30%;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.sm_side button {
+	background-color: #93C47D;
+	width: 100%;
+	margin: 10px 0;
+	font-size: medium;
 }
