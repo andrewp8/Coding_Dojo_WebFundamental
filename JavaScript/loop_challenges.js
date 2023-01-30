@@ -38,18 +38,25 @@ function sigma() {
 // Factorial
 function factorial() {
   var i = 1;
-  var y;
-  var product;
+  var product = 1;
   while (i <= 12) {
+    product *= i;
     i++;
-    y = i;
-    product = y * i;
   }
   console.log(product);
 }
 
-// odd_Number();
-// decreasing_multiples_of_3();
-// print_the_sequence();
-// sigma();
+console.log('Print odds 1-20:');
+odd_Number();
+
+console.log('Decreasing Multiples of 3:');
+decreasing_multiples_of_3();
+
+console.log('Print the sequence: ');
+print_the_sequence();
+
+console.log('Sigma: ');
+sigma();
+
+console.log('Factorial: ');
 factorial();
