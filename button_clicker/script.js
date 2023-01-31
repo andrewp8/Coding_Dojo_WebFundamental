@@ -1,5 +1,9 @@
 function switchMode(element) {
-  element.innerText = "Logout";
+  if (element.innerText == "Login") {
+    element.innerText = "Logout";
+  } else {
+    element.innerText = "Login";
+  }
 }
 
 function custom_alert() {
