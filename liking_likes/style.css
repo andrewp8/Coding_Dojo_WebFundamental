@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Balsamiq Sans', cursive;
+  width: 500px;
+  margin: 0 auto;
+}
+
+button {
+	font-family: 'Balsamiq Sans', cursive;
+  font-size: medium;
+	font-weight: bolder;
+	background-color: #FFD966;
+	white-space: nowrap;
+	padding: 5px 15px;
+	border: 2px solid black;
+	box-shadow: 3px 4px 1px black;
+}
+
+a{
+  color: #1773c4;
+}
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/*        header         */
+.header {
+  width: 100%;
+}
+
+.header h2:first-child {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-weight: lighter;
+}
+
+.header h2:last-child {
+  padding: 10px 20px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*        profile        */
+.profile {
+  flex: 120px;
+  border: 3px solid black;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.profile img {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.profile a{
+  font-size: small;
+}
+
+.profile h3 {
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
+/*        feed         */
+.feed {
+  width: 310px;
+}
+/*        like_container */
+.like_container {
+  width: 100%;
+  padding: 20px;
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+
+.like_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.like_header h3 {
+  font-weight:lighter ;
+}
+
+.like_header span {
+  padding-left: 65px;
+}
