@@ -9,6 +9,10 @@ body{
   font-family: 'Balsamiq Sans', cursive;
 }
 
+img {
+  border-radius: 50%;
+}
+
 /*        navbar         */
 
 .navbar {
@@ -79,7 +83,6 @@ li {
   margin-left: 25px;
   width: 80px;
   border: 4px solid white;
-  border-radius: 50%;
   box-shadow: 2px 2px 2px black;
 }
 
