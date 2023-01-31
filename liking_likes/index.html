@@ -18,6 +18,10 @@
     <div class="side">
       <div class="profile">
         <img src="user-circle.png" alt="">
+        <!-- 
+          Question: Why can't I add margin/padding/space for this <a>?
+          I have to add the <img>'s margin-bottom and <h3>'s margin-top
+        -->
         <a href="#">Add an avatar</a>
         <h3>James Doe</h3>
       </div>
@@ -27,7 +31,7 @@
         <div class="like_header">
           <h3>Neil M</h3>
           <p><span class="likeCount" id="user1">9</span> like(s)</p>
-          <button onclick="like(this)">Like</button>
+          <button onclick="like('user1')">Like</button>
         </div>
         <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
       </div>
@@ -35,7 +39,7 @@
         <div class="like_header">
           <h3>Nichole K</h3>
           <p><span class="likeCount" id="user2">12</span> like(s)</p>
-          <button onclick="like(this)">Like</button>
+          <button onclick="like('user2')">Like</button>
         </div>
         <p>Just finished my <a href="#">next comic</a>, check it out.</p>
       </div>
@@ -43,7 +47,7 @@
         <div class="like_header">
           <h3>Jim R</h3>
           <p><span class="likeCount" id="user3">9</span> like(s)</p>
-          <button onclick="like(this)">Like</button>
+          <button onclick="like('user3')">Like</button>
         </div>
         <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
       </div>
