@@ -1,10 +1,11 @@
 function like(element) {
-  // var like = document.querySelector(".likeCount");
-  // console.log(like);
-  // like.innerText++;
-  // for (var i = 0; i < like.classList.length; i++) {
-  //   document.querySelectorAll(".likeCount").innerText++;
-  // }
-  console.log(document.querySelector("likeCount"));
+  console.log(element);
+  var like1 = document.querySelector('#user1');
+  like1.innerText++;
 
+  var like2 = document.querySelector('#user2');
+  like2.innerText++;
+
+  var like3 = document.querySelector('#user3');
+  like3.innerText++;
 }
