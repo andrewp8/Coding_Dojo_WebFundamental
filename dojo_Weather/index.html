@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="navBar">
+    <h1>DojoWeather</h1>
+    <ul>
+      <li onclick="alertMsg()">Burbank</li>
+      <li onclick="alertMsg()">Chicago</li>
+      <li onclick="alertMsg()">Dallas</li>
+    </ul>
+  </div>
+
+  <div class="header">
+    <h2>San Jose</h2>
+    <div class="tempSwitch">
+      <p>show temperature in</p>
+      <select name="temp" id="tempType" onchange="convert(this)">
+        <option>°C</option>
+        <option>°F</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col col-1">
+      <h3>Today</h3>
+      <img src="./images/some_rain.png" alt="Rainy">
+      <p>some rain</p>
+      <ul>
+        <li><span id="temp1">24</span>°</li>
+        <li><span id="temp2">18</span>°</li>
+      </ul>
+    </div>
+    <div class="col col-2">
+      <h3>Tomorrow</h3>
+      <img src="./images/some_sun.png" alt="Sunny">
+      <p>some sun</p>
+      <ul>
+        <li><span id="temp3">27</span>°</li>
+        <li><span id="temp4">19</span>°</li>
+      </ul>
+    </div>
+    <div class="col col-3">
+      <h3>Friday</h3>
+      <img src="./images/some_clouds.png" alt="Cloudy">
+      <p>some clouds</p>
+      <ul>
+        <li><span id="temp5">21</span>°</li>
+        <li><span id="temp6">16</span>°</li>
+      </ul>
+    </div>
+    <div class="col col-4">
+      <h3>Saturday</h3>
+      <img src="./images/some_sun.png" alt="Sunny">
+      <p>some sun</p>
+      <ul>
+        <li><span id="temp7">26</span>°</li>
+        <li><span id="temp8">21</span>°</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cookie">
+    <img src="./images/cookie.png" alt="Cookie Icon">
+    <div class="content">
+      <h4>Stop! Cookie time</h4>
+      <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and
+        to analyse our traffic. <a href="#">Read more...</a></p>
+    </div>
+    <button onclick="acceptCookie('.cookie')">I Accept</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
