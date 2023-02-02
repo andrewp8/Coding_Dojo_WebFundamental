@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API Fun!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>
+        Challenge: Using the Pokemon API, build some pokemon cards below and fill in the data using the API's object
+        results. Also feel free to fill in the pokedex entry/write your own!<br>
+        Bonus Challenges(These can be in their own seperate elements rather than directly on the cards!):
+    </h2>
+    <ol>
+        <li>List Each of the Pokemon's abilities. (Note: Abilities is an array of objects!)</li>
+        <li>List the type(s) of the pokemon. (Also an array of objects!)</li>
+        <li>Loop through stats and show the base stat for each stat name. (Hint: stats is an array of objects, and the
+            name of the stat is found in the singular stat objects.)</li>
+    </ol>
+
+    <h3>Remember to console log often and check what you are getting from the API one step at a time to keep track!</h3>
+
+
+    <div id="pokemonData">
+
+    </div>
+    <br>
+    <p>Pick the card you want to display by its color: yellow, red, blue, or grey</p>
+    <input type="text" id="cardSearch">
+    <button onclick="pickingCard()">Pick the card!</button>
+    <input type="text" id="pokeSearch">
+    <button onclick="displayPokemonData()">Click for Pokemon!</button>
+
+    <div class="flexy">
+        <div class="card-container">
+            <div class="content-container" id="card1">
+                <div class="top">
+                    <div class="text-bar">
+                        <!-- use the API to get the pokemon's name -->
+                        <h4 class="name"> Name Placeholder</h4>
+                        <div class="flexy">
+                            <!-- HP can be any value, isn't in API. :)  -->
+                            <h4 class="hp"> HP </h4>
+                            <!-- image plageholder for symbol -->
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <!-- a wrapper for the style of the image add your image from the api -->
+                        <!-- put the image here! it doesn't have to fit perfectly -->
+
+                        <!-- Hint: Check the sprites attribute! -->
+                    </div>
+                </div> <!-- end of top this is  -->
+                <ul id="stats">
+                    <h4> Stats </h4>
+                    <!-- show us what you found! -->
+                    <li class="type">
+                        Type:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="height"> Height:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="weight">
+                        Weight:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="exp">
+                        Base Experience:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                </ul> <!-- end of Stats ul -->
+                <hr>
+            </div> <!-- end of content-container -->
+        </div> <!-- end of card-container  this is just for style -->
+
+        <div class="card-container">
+            <div class="content-container" id="card2">
+                <div class="top">
+                    <div class="text-bar">
+                        <!-- use the API to get the pokemon's name -->
+                        <h4 class="name"> Name Placeholder</h4>
+                        <div class="flexy">
+                            <!-- HP can be any value, isn't in API. :)  -->
+                            <h4 class="hp"> HP </h4>
+                            <!-- image plageholder for symbol -->
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <!-- a wrapper for the style of the image add your image from the api -->
+                        <!-- put the image here! it doesn't have to fit perfectly -->
+
+                        <!-- Hint: Check the sprites attribute! -->
+                    </div>
+                </div> <!-- end of top this is  -->
+                <ul id="stats">
+                    <h4> Stats </h4>
+                    <!-- show us what you found! -->
+                    <li class="type">
+                        Type:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="height"> Height:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="weight">
+                        Weight:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="exp">
+                        Base Experience:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                </ul> <!-- end of Stats ul -->
+                <hr>
+            </div> <!-- end of content-container -->
+        </div> <!-- end of card-container  this is just for style -->
+
+        <div class="card-container">
+            <div class="content-container" id="card3">
+                <div class="top">
+                    <div class="text-bar">
+                        <!-- use the API to get the pokemon's name -->
+                        <h4 class="name"> Name Placeholder</h4>
+                        <div class="flexy">
+                            <!-- HP can be any value, isn't in API. :)  -->
+                            <h4 class="hp"> HP </h4>
+                            <!-- image plageholder for symbol -->
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <!-- a wrapper for the style of the image add your image from the api -->
+                        <!-- put the image here! it doesn't have to fit perfectly -->
+
+                        <!-- Hint: Check the sprites attribute! -->
+                    </div>
+                </div> <!-- end of top this is  -->
+                <ul id="stats">
+                    <h4> Stats </h4>
+                    <!-- show us what you found! -->
+                    <li class="type">
+                        Type:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="height"> Height:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="weight">
+                        Weight:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="exp">
+                        Base Experience:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                </ul> <!-- end of Stats ul -->
+                <hr>
+            </div> <!-- end of content-container -->
+        </div> <!-- end of card-container  this is just for style -->
+        <div class="card-container">
+            <div class="content-container" id="card4">
+                <div class="top">
+                    <div class="text-bar">
+                        <!-- use the API to get the pokemon's name -->
+                        <h4 class="name"> Name Placeholder</h4>
+                        <div class="flexy">
+                            <!-- HP can be any value, isn't in API. :)  -->
+                            <h4 class="hp"> HP </h4>
+                            <!-- image plageholder for symbol -->
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <!-- a wrapper for the style of the image add your image from the api -->
+                        <!-- put the image here! it doesn't have to fit perfectly -->
+
+                        <!-- Hint: Check the sprites attribute! -->
+                    </div>
+                </div> <!-- end of top this is  -->
+                <ul id="stats">
+                    <h4> Stats </h4>
+                    <!-- show us what you found! -->
+                    <li class="type">
+                        Type:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="height"> Height:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="weight">
+                        Weight:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                    <li class="exp">
+                        Base Experience:
+                        <!-- grab the stats (height, weight, base experience) and show them here -->
+                    </li>
+                </ul> <!-- end of Stats ul -->
+                <hr>
+            </div> <!-- end of content-container -->
+        </div> <!-- end of card-container  this is just for style -->
+    </div> <!-- just some flex fun -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- Data to get from API
+        id - the easiest way to work with data we get from the api
+        
+        name - at the top of the card add the name of our new little friend
+        stat - base stat, hp - add this to the top right of the text banner from the API
+        art - add the art into the image wrapper don't forget to use alt text!
+
+        type - use the API to get this data for our stats block
+        height - use the API to get this data for our stats block
+        weight - use the API to get this data for our stats block
+        base experience - use the API to get this data for our stats block
+
+-->
