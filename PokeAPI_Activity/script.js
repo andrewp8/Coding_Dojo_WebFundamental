@@ -20,15 +20,12 @@ async function displayPokemonData() {
     var weight = document.querySelector('.weight')
     var exp = document.querySelector('.exp')
     var pokemon = await getPokemonData(document.querySelector('#pokeSearch').value.toLowerCase());
-    // var pokeDiv = document.querySelector('#pokemonData');
 
-    // pokeDiv.innerHTML = "";
-    // pokeDiv.innerHTML += `<h1> ${pokemon.name} </h1>`;
-    // pokeDiv.innerHTML += `<img src='${pokemon.sprites.front_default}' alt='${pokemon.name}'>`
+
 
     name.innerText = `${pokemon.name}`;
     hp.innerText = `HP ${Math.round(Math.random() * 200)}xp`;
-    img.innerHTML = `<img class="image" src='${pokemon.sprites.front_default}' alt='${pokemon.name}'>`;
+    img.innerHTML = `<img id="image" src='${pokemon.sprites.front_default}' alt='${pokemon.name}'>`;
     type.innerHTML = `<p>Type: ${pokemon.types[0].type.name}</p>`
     height.innerHTML = `<p>Height: ${pokemon.height}</p>`
     weight.innerHTML = `<p>Weight: ${pokemon.weight}</p>`
@@ -37,8 +34,8 @@ async function displayPokemonData() {
 }
 
 function pickingCard() {
-    var input = document.querySelector('#cardSearch');
+    var input;
     if (input.value == 'red') {
-        displayPokemonData();
+        input = document.querySelector('#cardSearch');
     }
 }

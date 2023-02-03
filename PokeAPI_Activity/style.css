@@ -51,9 +51,10 @@
 
 }
 
-.image {
-    width: 100%;
-    margin-top: -50px;
+#image {
+    width: 60%;
+    /* margin-top: -10px; */
+    margin-left: 60px
 }
 
 #stats {
